@@ -124,6 +124,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-soft flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Background Music */}
+      <audio autoPlay loop>
+        <source src="/music.mp3" type="audio/mpeg" />
+      </audio>
       {/* Animated background elements */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(15)].map((_, i) => (
